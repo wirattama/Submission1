@@ -5,8 +5,7 @@ import streamlit as st
 
 sns.set(style='dark')
 
-filepath = r"C:\Users\astennu\Downloads\Air-quality-dataset\Dashboard\merged_data.csv"
-df = pd.read_csv(filepath)
+df = pd.read_csv("merged_data.csv")
 
 df['year'] = pd.to_numeric(df['year'], errors='coerce')
 
